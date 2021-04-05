@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="1" >
+    
+
+    <TextView
+        android:id="@+id/lblSelecione"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Lab1Tela7" />
+
+
+    <EditText
+        android:id="@+id/edNomeInfratorEs"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text|textMultiLine"
+        android:maxLength="60" 
+
+        />
+
+    <CheckBox
+        android:id="@+id/chkPPD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PPD" />
+
+
+    <TextView
+        android:id="@+id/lblPGU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Lab2Tela7" />
+
+
+
+    <EditText
+        android:id="@+id/edPasaporte"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text|textMultiLine"
+        android:maxLength="15" />
+
+    <TextView
+        android:id="@+id/lblTotalMdsAdm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Lab3Tela7" />
+
+
+    <EditText
+        android:id="@+id/edPID"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text|textMultiLine"
+        android:maxLength="2" >
+
+        <requestFocus />
+    </EditText>
+
+
+    <TextView
+        android:id="@+id/lblTotalTipos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Lab5Tela7" />
+
+
+
+
+
+    <EditText
+        android:id="@+id/edCPF"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number|text|textMultiLine"
+        android:maxLength="11" />
+
+
+    <Button
+        android:id="@+id/btGravaInfrator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lab2Tela3" />
+    <Button
+        android:id="@+id/btnAssInfrator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Assinatura do Infrator" />
+    
+</LinearLayout>

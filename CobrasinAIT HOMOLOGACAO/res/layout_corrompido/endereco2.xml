@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="4dp" />    
+    <TextView
+        android:id="@+id/lblLogradouroSel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Endereço selecionado:" />
+    
+    <Space
+        
+        android:layout_width="match_parent"
+        android:layout_height="4dp" />
+ <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dip"
+        android:background="#979797" />
+    <TextView
+        android:id="@+id/lblSelecione"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecione o 2° Logradouro" />
+
+    <EditText
+        android:id="@+id/txtLogradouro2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:maxLength="80" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btPesquisaEnq"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lab9Tela3" />
+
+    <Button
+        android:id="@+id/btnVoltarLogra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Voltar" />
+
+    <ListView
+        android:id="@+id/lstLogradouros2"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+
+</LinearLayout>

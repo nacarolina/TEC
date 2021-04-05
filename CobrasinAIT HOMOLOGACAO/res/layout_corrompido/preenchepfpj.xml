@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent" >
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" >
+
+     
+    <TableLayout android:id="@+id/tableLayout1" android:layout_height="wrap_content" android:weightSum="1" android:layout_width="fill_parent">  <!-- android:layout_width="317dp" -->
+
+    <TextView
+        android:id="@+id/txtcpfcnpj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Lab1Tela12" >
+
+	</TextView>
+
+        <EditText
+            android:id="@+id/EdCPFpfpj"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number|text"
+            android:maxLength="11" />
+
+    <requestFocus />
+        <TextView
+            android:id="@+id/lblTotalPais"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Lab2Tela12" />
+
+        <EditText
+            android:id="@+id/EdNomepf"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLength="60" />
+
+        <TextView
+            android:id="@+id/lblTotalTipos"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lab5Tela2" />
+
+        <EditText
+            android:id="@+id/edData"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="10"
+            android:ems="10"
+            android:inputType="date"/>
+
+        <TextView
+            android:id="@+id/lblTotalEnquadramento"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lab6Tela2" />
+
+        <EditText
+            android:id="@+id/edHora"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"         
+            android:ems="10"
+        android:maxLength="8"
+         android:inputType="time"/>
+            <Button android:layout_height="wrap_content"  android:layout_width="fill_parent" android:text="Logradouro" android:id="@+id/btLogradouro"></Button>
+            <Button android:layout_height="wrap_content"  android:layout_width="fill_parent" android:text="Enquadramento" android:id="@+id/btEnquadramento"></Button>
+
+            <Button
+                android:id="@+id/btObservacoes"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Observações" />
+
+            <Button
+                android:id="@+id/btMedidaAdm"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Medidas Administrativas" />
+
+            <Button
+                android:id="@+id/btFotografa"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Fotografa" />
+
+            <Button
+                android:id="@+id/btVisualizaAit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Visualiza" />
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btCancelaAitP"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancela AIT"
+        android:textStyle="normal" />
+
+    <Button
+        android:id="@+id/btFinaliza"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Finaliza"
+        android:textStyle="normal" >
+</Button>
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/listExibeAit_excesso"
+        android:layout_width="fill_parent"
+        android:layout_height="264dp" >
+    </ListView>
+
+    <Button
+        android:id="@+id/btnExibeNF_excesso"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Nota Fiscal" />
+
+    <Button
+        android:id="@+id/btImprime_excesso"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Lab1Tela9" />
+
+    <Button
+        android:id="@+id/btVisualizarImpressaoExcesso"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Visualizar Impressão" />
+    <Button
+        android:id="@+id/btFotos_excesso"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Lab4Tela9" />
+
+    <Button
+        android:id="@+id/btCancelaAit_excesso"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Lab3Tela9" />
+
+</LinearLayout>

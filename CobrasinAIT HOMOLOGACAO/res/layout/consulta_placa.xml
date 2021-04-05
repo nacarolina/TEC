@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="6dp" />
+
+    <TextView
+        android:id="@+id/lblNumeroNF_Foto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Consulta de Placa"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="6dp" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:background="#ffffff" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="6dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Digite a Placa:" />
+
+    <br.com.cobrasin.TrataPlaca
+        android:id="@+id/txtConsultarPlaca"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text" >
+    </br.com.cobrasin.TrataPlaca>
+
+    <Button
+        android:id="@+id/btnConsultarPlaca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Consultar Placa" />
+    
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="6dp" />
+    
+     <TextView
+        android:id="@+id/lblVeiculoEncontradoCP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Veículo encontrado!"
+        android:textColor="#FFFFFF" />
+
+   <Space
+        android:layout_width="match_parent"
+        android:layout_height="6dp" />
+    
+    <LinearLayout
+        android:id="@+id/pnlDadosVeiculoCP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView3CP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dados do Veículo"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#3F3F3F" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dip"
+            android:background="#B1B1B1" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="4dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Space
+                android:layout_width="4px"
+                android:layout_height="2dp" />
+
+            <TextView
+                android:id="@+id/lblPlacaCP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Placa:"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#3F3F3F" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Space
+                android:layout_width="4px"
+                android:layout_height="2dp" />
+
+            <TextView
+                android:id="@+id/lblModeloCP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Modelo:"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#3F3F3F" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Space
+                android:layout_width="4px"
+                android:layout_height="2dp" />
+
+            <TextView
+                android:id="@+id/lblMarcaCP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Marca:"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#3F3F3F" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Space
+                android:layout_width="4px"
+                android:layout_height="2dp" />
+
+            <TextView
+                android:id="@+id/lblCorCP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cor:"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#3F3F3F" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Space
+                android:layout_width="4px"
+                android:layout_height="2dp" />
+
+            <TextView
+                android:id="@+id/lblAnoLicenciamentoCP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ano Licenciamento:"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#3F3F3F" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="4dp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dip"
+            android:background="#B1B1B1" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="4dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Space
+                android:layout_width="4px"
+                android:layout_height="2dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Space
+                android:layout_width="4px"
+                android:layout_height="2dp" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20px" />
+
+    <Button
+        android:id="@+id/btnNovoAitCP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Novo AIT" />
+
+</LinearLayout>

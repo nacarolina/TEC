@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lblTotalEspecies" android:text="@string/lab1Tela3"></TextView>
+
+    <EditText
+        android:id="@+id/edLogradouro"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:maxLength="80" >
+ </EditText>
+
+    <Button
+        android:id="@+id/btPesquisa"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lab9Tela3" >
+
+    </Button>
+
+    <ListView
+        android:id="@+id/listaLogradouros"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+
+
+    <RadioGroup
+        android:id="@+id/radioG1"
+        android:layout_width="fill_parent"
+        android:layout_height="113dp"
+        android:visibility="invisible" >
+
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/lab6Tela3" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lab7Tela3" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lab8Tela3" />
+
+    </RadioGroup>
+
+        <TextView
+            android:id="@+id/txtLogSelec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lab3Tela3"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/txtNumero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lab4Tela3"
+            android:visibility="invisible" />
+
+
+        <EditText
+            android:id="@+id/edNumeroLog"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:visibility="invisible">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/btGravaLogNum"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lab5Tela3" 
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/btRetornalog"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lab2Tela3"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+</LinearLayout>
+

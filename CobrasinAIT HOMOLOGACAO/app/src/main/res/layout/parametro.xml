@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        <TextView
+            android:id="@+id/lblVersao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:paddingLeft="10px"
+            android:paddingBottom="10px"
+            android:text="VERSÃO 5.1"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/txvnrimagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lblModeOpe" />
+
+        <ToggleButton
+            android:id="@+id/tbtnConexWeb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ToggleButton" />
+
+        <!-- <TextView
+             android:id="@+id/lblLogra2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/lblModoGps" />
+
+         <ToggleButton
+             android:id="@+id/tbtnModoGps"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="ToggleButton" />-->
+
+        <TextView
+            android:id="@+id/lblTotalLogradouro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lblModoOCR" />
+
+        <ToggleButton
+            android:id="@+id/tbtnModoOCR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ToggleButton" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lblGeraAitPdf" />
+
+        <ToggleButton
+            android:id="@+id/tbtnGeraPdf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ToggleButton" />
+
+        <RadioGroup
+            android:id="@+id/rdgTipoTAG"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipo de Leitura da TAG" />
+
+            <RadioButton
+                android:id="@+id/rdbGEN2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="GEN2" />
+
+            <RadioButton
+                android:id="@+id/rdbG0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="G0" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioG11"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/lblTotalTipos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Lab5Tela11" />
+
+            <RadioButton
+                android:id="@+id/radio00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/Lab1Tela10" />
+
+            <RadioButton
+                android:id="@+id/radio11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Lab2Tela10" />
+
+        </RadioGroup>
+        <RadioGroup
+            android:id="@+id/rdgTipoPrint"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TxtModelPrint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Modelo Impressora:" />
+
+            <RadioButton
+                android:id="@+id/rdbSkyPix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="SkyPix" />
+
+            <RadioButton
+                android:id="@+id/rdbBlueBamboo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Blue Bamboo" />
+        </RadioGroup>
+        <TextView
+            android:id="@+id/txtNumero1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Lab3Tela10" />
+
+
+
+
+        <EditText
+            android:id="@+id/edEnderecoImp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="20" >
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/lblSelecione"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Lab7Tela10" />
+
+        <EditText
+            android:id="@+id/edPatImp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="20" />
+
+
+
+        <Button
+            android:id="@+id/btGravaPar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lab5Tela3" />
+
+        <Button
+            android:id="@+id/btRetornaPar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lab2Tela3"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lblTotalEnquadramento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Lab4Tela10" />
+
+
+
+        <EditText
+            android:id="@+id/edSenhaResetPDA"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:maxLength="20" />
+
+        <Button
+            android:id="@+id/btResetPDA"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Lab5Tela10"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txvAgente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tabelas Webtrans" />
+
+        <Button
+            android:id="@+id/btRecTabelasWebTrans"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Baixar Tabelas do Webtrans"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btBkpDb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Backup" />
+
+        <TextView
+            android:id="@+id/lblModelo_DetalhesQFV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dados do QFV"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <Button
+            android:id="@+id/btnReceberTabelaQFV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Baixar dados do QFV" />
+
+    </LinearLayout>
+
+</ScrollView>

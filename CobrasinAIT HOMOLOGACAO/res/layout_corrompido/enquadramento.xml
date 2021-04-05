@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <TextView
+        android:id="@+id/txvExcluir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblExcluir" />
+
+    <ListView
+        android:id="@+id/listaEnquadSelecionados"
+        android:layout_width="fill_parent"
+        android:layout_height="52dp" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/lblTotalEnquadramento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lab1Tela4" />
+ 
+    <EditText
+        android:id="@+id/edEnquadramento"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:maxLength="80" >
+
+ </EditText>
+
+    <Button
+        android:id="@+id/btPesquisaEnq"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Pesquisa" />
+     
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1" >
+
+    </TableLayout>
+
+    <ListView
+        android:id="@+id/listaEnquadramentos"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </ListView>
+
+</LinearLayout>

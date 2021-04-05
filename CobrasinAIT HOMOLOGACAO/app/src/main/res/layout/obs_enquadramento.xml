@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="6dp" />
+
+    <TextView
+        android:id="@+id/lblNumeroNF_Foto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Observações Obrigatória do Enquadramento"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="6dp" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:background="#ffffff" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="6dp" />
+
+    <CheckBox
+        android:id="@+id/chkSemObrigatoriedade_obsEnquadramento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sem obrigatoriedade" />
+    <TextView
+        android:id="@+id/lblTotalEnquadramento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lab1Tela4" />
+
+
+    <EditText
+        android:id="@+id/txtEnquadramento_ObsEnquadramento"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:maxLength="80" />
+
+    <Button
+        android:id="@+id/btnPesquisa_ObsEnquadramento"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Pesquisa" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="6dp" />
+
+    <ListView
+        android:id="@+id/listaObsEnquadramento"
+        android:layout_width="fill_parent"
+        android:layout_height="238dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="0.94"></ListView>
+</LinearLayout>

@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".ConsultaPlaca">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblSelecione_excesso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lab1Tela2" />
+
+        <br.com.cobrasin.TrataPlaca
+            android:id="@+id/txtConsultarPlaca_excesso"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"></br.com.cobrasin.TrataPlaca>
+
+        <Button
+            android:id="@+id/btPesquisa_excesso"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirma" />
+
+
+        <!--
+    <Button
+        android:id="@+id/btLap"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="L A P" />
+
+
+        -->
+
+        <Button
+            android:id="@+id/btnQFV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="QFV" />
+
+        <Button
+            android:id="@+id/btNotaFiscal_excesso"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Nota Fiscal" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecione qual deseja ter como parâmetro:" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="4px" />
+
+        <LinearLayout
+            android:id="@+id/header_Caracterizacao"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#151515"
+            android:orientation="horizontal"
+            android:paddingLeft="8px"
+            android:paddingTop="4px"
+            android:paddingBottom="4px">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgExpandir_Caracterizacao"
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:src="@drawable/add2" />
+
+                <TextView
+                    android:id="@+id/textView1_Caracterizacao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="6px"
+                    android:paddingTop="9px"
+                    android:text="Caracterização |"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/PbtValorHeader_Caracterizacao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="6px"
+                    android:paddingTop="9px"
+                    android:text="PBT/PBTC: "
+                    android:textColor="#FFFFFF"
+                    android:textSize="18px"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rdbCaracterizacao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#FFFFFF" />
+
+        <LinearLayout
+            android:id="@+id/expandable_Caracterizacao"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="fill"
+            android:background="#2E2E2E"
+            android:orientation="vertical"
+            android:paddingLeft="8px">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="4px" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="4px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Silhueta:"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgSilheta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="4px" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Grupo/Nº Eixos: "
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lblGrupo_N_Eixos_Caracterizacao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="."
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="4px" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PBT ou PBTC/(5%): "
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lblPBT_PBTC_Caracterizacao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="."
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="4px" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Caracterização: "
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lblCaracterizacaoTitulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="."
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/lblCaracterizacaoDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="."
+                android:textColor="#FFFFFF" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="4px" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Classe: "
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lblClasse_Caracterizacao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="."
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="4px" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Código: "
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lblCodigo_Caracterizacao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="."
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="4px" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="4px" />
+
+        <LinearLayout
+            android:id="@+id/header_Eixo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#151515"
+            android:orientation="horizontal"
+            android:paddingLeft="8px"
+            android:paddingTop="4px"
+            android:paddingBottom="4px">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgExpandir_Eixo"
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:src="@drawable/add2" />
+
+                <TextView
+                    android:id="@+id/lblTeste"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="6px"
+                    android:paddingTop="9px"
+                    android:text="Eixos |"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/PbtValorHeader_Eixo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="6px"
+                    android:paddingTop="9px"
+                    android:text="PBT/PBTC: "
+                    android:textColor="#FFFFFF"
+                    android:textSize="18px"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rdbEixo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#FFFFFF" />
+
+        <LinearLayout
+            android:id="@+id/expandable_Eixo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2E2E2E"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="4px" />
+
+            <ListView
+                android:id="@+id/lstListaEixoSel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ListView>
+        </LinearLayout>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="4px" />
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#151515"
+            android:orientation="horizontal"
+            android:paddingLeft="8px"
+            android:paddingTop="4px"
+            android:paddingBottom="4px">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgExpandir"
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:src="@drawable/add2" />
+
+                <TextView
+                    android:id="@+id/lblTeste4445"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="6px"
+                    android:paddingTop="9px"
+                    android:text="Fabricante/Modelo |"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16px" />
+
+                <TextView
+                    android:id="@+id/PbtValorHeader_FabricanteModelo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="6px"
+                    android:paddingTop="9px"
+                    android:text="PBT/ PBTC: "
+                    android:textColor="#FFFFFF"
+                    android:textSize="16px"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rdbFabricante_Modelo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#FFFFFF" />
+
+        <LinearLayout
+            android:id="@+id/expandable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2E2E2E"
+            android:orientation="vertical"
+            android:paddingLeft="8px">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="4px" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="4px" />
+
+            <TextView
+                android:id="@+id/lblFabricante_DetalhesQFV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fabricante:"
+                android:textColor="#FFFFFF" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="4px" />
+
+            <TextView
+                android:id="@+id/lblModelo_DetalhesQFV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Modelo:"
+                android:textColor="#FFFFFF" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="4px" />
+
+            <TextView
+                android:id="@+id/lblModeloPBT_DetalhesQFV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Classificação PBT:"
+                android:textColor="#FFFFFF" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="4px" />
+
+            <TextView
+                android:id="@+id/lblValorPBT_DetalhesQFV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Peso PBT:"
+                android:textColor="#FFFFFF" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="4px" />
+
+            <TextView
+                android:id="@+id/lblCMT_DetalhesQFV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CMT:"
+                android:textColor="#FFFFFF" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="4px" />
+
+            <TextView
+                android:id="@+id/lblObservacoes_DetalhesQFV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Observações:"
+                android:textColor="#FFFFFF" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="4px" />
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/tableLayout1_excesso"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <!-- android:layout_width="317dp" -->
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="4px" />
+
+            <TextView
+                android:id="@+id/lblTotalTipos_excesso"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lab5Tela2" />
+
+            <EditText
+                android:id="@+id/edData_excesso"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="date"
+                android:maxLength="10"></EditText>
+
+            <TextView
+                android:id="@+id/lblTotalEnquadramento_excesso"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lab6Tela2" />
+
+            <EditText
+                android:id="@+id/edHora_excesso"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="time"
+                android:maxLength="8" />
+
+            <TextView
+                android:id="@+id/lblTotalPais_excesso"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lab4Tela2" />
+
+            <br.com.cobrasin.TrataMarca
+                android:id="@+id/EdMarca_excesso"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"></br.com.cobrasin.TrataMarca>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tara (KG):" />
+
+            <EditText
+                android:id="@+id/txtTara"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"></EditText>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Peso Declarado (KG):" />
+
+            <EditText
+                android:id="@+id/txtPesoDeclarado_PreencheAIT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/textView34545"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Excesso Constatado (KG):" />
+
+            <EditText
+                android:id="@+id/txtExcessoConstatado_PreencheAIT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:enabled="false" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Condutor foi abordado" />
+
+                <TextView
+                    android:id="@+id/lbl2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="Via entregue ao condutor"
+                    android:layout_marginRight="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:orientation="horizontal">
+
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rdoCondutorAbordadoNaoExcesso"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:enabled="false"
+                            android:text="Não" />
+
+                        <RadioButton
+                            android:id="@+id/rdoCondutorAbordadoSimExcesso"
+                            android:layout_width="match_parent"
+                            android:enabled="false"
+                            android:layout_height="match_parent"
+                            android:text="Sim" />
+                    </RadioGroup>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rdoViaEntregueNaoExcesso"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:enabled="false"
+                            android:text="Não" />
+
+                        <RadioButton
+                            android:id="@+id/rdoViaEntregueSimExcesso"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:enabled="false"
+                            android:layout_marginRight="15dp"
+                            android:text="Sim" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btEspecie_excesso"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Especie"></Button>
+
+            <Button
+                android:id="@+id/btTipo_excesso"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Tipo"></Button>
+
+            <Button
+                android:id="@+id/btLogradouro_excesso"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Logradouro"></Button>
+
+            <Button
+                android:id="@+id/btEnquadramento_excesso"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Enquadramento"></Button>
+
+            <Button
+                android:id="@+id/btEmbarcador_excesso"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Dados do Embarcador"></Button>
+
+            <Button
+                android:id="@+id/btTransportador_excesso"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Dados do Transportador"></Button>
+
+            <Button
+                android:id="@+id/btDadosInfrator_excesso"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Dados do Condutor" />
+
+            <Button
+                android:id="@+id/btObservacoes_excesso"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Observações" />
+
+            <Button
+                android:id="@+id/btMedidaAdm_excesso"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Medidas Administrativas" />
+
+            <Button
+                android:id="@+id/btInfrEquip_excesso"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Infração - Equipamento" />
+
+            <Button
+                android:id="@+id/btAssinatura_excesso"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="Assinatura"
+                android:text="Assinatura"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/btFotografa_excesso"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Fotografa" />
+
+            <Button
+                android:id="@+id/btVisualizaAit_excesso"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Visualiza" />
+        </TableLayout>
+
+        <Button
+            android:id="@+id/btCancelaAitP_excesso"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancela AIT"
+            android:textStyle="normal" />
+
+
+        <CheckBox
+            android:id="@+id/chkDuplicarAIT_excesso"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Gerar outra infração para este veículo" />
+
+        <Button
+            android:id="@+id/btFinaliza_excesso"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Finaliza"
+            android:textStyle="normal"></Button>
+
+        <ImageView
+            android:id="@+id/Bitmap_Main_Photo_excesso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+
+</ScrollView>

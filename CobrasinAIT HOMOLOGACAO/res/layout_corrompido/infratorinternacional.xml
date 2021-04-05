@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/lblSelecione"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Lab1Tela7" />
+
+    <EditText
+        android:id="@+id/edNomeInfratorEs"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text|textMultiLine"
+        android:maxLength="60" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/lblTotalEnquadramento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Documento de Indentificação" />
+
+    <EditText
+        android:id="@+id/edPasaporte"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text|textMultiLine" />
+
+    <TextView
+        android:id="@+id/lblTotalMdsAdm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PID" />
+
+    <EditText
+        android:id="@+id/edPID"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text|textMultiLine" />
+
+    <Button
+        android:id="@+id/btGravaInfratorIn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lab2Tela3" />
+
+</LinearLayout>

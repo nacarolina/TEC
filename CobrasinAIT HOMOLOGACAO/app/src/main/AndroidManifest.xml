@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="br.com.cobrasin"
+    android:versionCode="30"
+    android:versionName="4.9">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_OWNER_DATA" />
+    <uses-permission android:name="android.permission.READ_OWNER_DATA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".lstObsEnquadramento" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.mydomain.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".PermissionConfig"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="fullSensor">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DownloadFTP" />
+        <activity android:name=".OrigemInfrator" />
+        <activity android:name=".InfratorInternacional" />
+        <activity android:name=".ListaTipoAit" />
+        <activity android:name=".VisualizarImpressao"></activity>
+        <activity android:name=".ImprimeAit" />
+        <activity
+            android:name=".obsEnquadramento"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".PreencheAit"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".PreencheAitExcesso"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".PreencheAitpfpj"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".PreencheAitplest"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity android:name=".ListaEspecie" />
+        <activity android:name=".ListaUfVeiculo" />
+        <activity android:name=".ListaModelo" />
+        <activity android:name=".ListaTipo" />
+        <activity android:name=".ListaLogradouro" />
+        <activity android:name=".ListaLogradouro1" />
+        <activity android:name=".ListaLogradouro2" />
+        <activity android:name=".ListaLogradouro3" />
+        <activity android:name=".ListaEnquadramento" />
+        <activity android:name=".ListaEnquadramento1" />
+        <activity android:name=".bloqueio_user_adm" />
+        <activity android:name=".ListaObservacoes" />
+        <activity android:name=".ListaDadosInfrator" />
+        <activity android:name=".ListaPais" />
+        <activity
+            android:name=".CobrasinAitActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".ListaAit"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
+        </activity>
+        <activity android:name=".ListaParametros" />
+        <activity android:name=".ExibeDadosAit" />
+        <activity android:name=".ExibeDadosAitpfpj" />
+        <activity android:name=".ExibeDadosAitPlest" />
+        <activity android:name=".ExibeDadosAitExcesso" />
+        <activity android:name=".ListaNf_ExibeAit_Excesso" />
+        <activity android:name=".CancelaAit" />
+        <activity android:name=".ExibeDadosAitAntesFechamento" />
+        <activity android:name=".ExibeDadosAitAntesFechamentopfpj" />
+        <activity android:name=".ExibeDadosAitAntesFechamentoPlest" />
+        <activity android:name=".Foto" />
+        <activity
+            android:name=".MostraFotos"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity android:name=".ListaMedidaAdm" />
+        <activity android:name=".ListaInfrEquipamento" />
+        <activity android:name=".EditDataHora" />
+        <activity android:name=".Estatistica" />
+        <activity android:name=".DadosEmbarcador" />
+        <activity android:name=".DadosTransportador" />
+        <activity android:name=".NotaFiscal" />
+        <activity android:name=".NotaFiscal_Cadastro" />
+        <activity android:name=".NotaFiscal_Foto" />
+        <activity android:name=".Fabricante_QFV" />
+        <activity android:name=".Modelo_QFV" />
+        <!--        <activity android:name=".DetalhesModelo_QFV" />-->
+        <activity android:name=".Caracterizacao_Sel" />
+        <activity android:name=".ListaEixo" />
+        <activity android:name=".PostoAgente" />
+        <activity
+            android:name=".VeiculosRestricaoOCR"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="TEC - OCR"
+            android:screenOrientation="landscape"
+            tools:ignore="LockedOrientationActivity" />
+        <activity android:name=".VeiculosRestricaoRFID" />
+        <activity android:name=".ConsultaPlaca" />
+        <activity
+            android:name=".DownloadTabelasWebtrans"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <service android:name=".AnprSdkExampleCheckingService">
+            <intent-filter>
+                <action android:name="com.birdorg.anpr.sdk.simple.camera.example.AnprSdkExampleCheckingService" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".AssinaturaDigitalActivity"
+            android:screenOrientation="landscape"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".AssinaturaInfratorActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="landscape"
+            tools:ignore="LockedOrientationActivity" />
+    </application>
+
+</manifest>

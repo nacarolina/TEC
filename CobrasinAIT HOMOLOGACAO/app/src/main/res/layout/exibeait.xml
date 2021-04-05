@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/listExibeAit"
+        android:layout_width="fill_parent"
+        android:layout_height="264dp"></ListView>
+
+
+    <Button
+        android:id="@+id/btImprime"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Lab1Tela9" />
+    <Button
+        android:id="@+id/btVisualizarImpressao"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Visualizar Impressão" />
+    <Button
+        android:id="@+id/btFotos"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Lab4Tela9" />
+
+
+
+    <Button
+        android:id="@+id/btCancelaAit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Lab3Tela9" />
+
+</LinearLayout>

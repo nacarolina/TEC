@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblSelecione"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lab1Tela2" />
+
+        <br.com.cobrasin.TrataPlaca
+            android:id="@+id/txtConsultarPlaca"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"></br.com.cobrasin.TrataPlaca>
+
+        <Button
+            android:id="@+id/btPesquisa"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirma" />
+
+        <!--
+        <Button
+            android:id="@+id/btLap"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="L A P" />
+         -->
+
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">  <!-- android:layout_width="317dp" -->
+
+
+            <TextView
+                android:id="@+id/lblTotalTipos"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lab5Tela2" />
+
+
+            <EditText
+                android:id="@+id/edData"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="date"
+                android:maxLength="10"></EditText>
+
+            <TextView
+                android:id="@+id/lblTotalEnquadramento"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lab6Tela2" />
+
+            <EditText
+                android:id="@+id/edHora"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="time"
+                android:maxLength="8" />
+
+            <TextView
+                android:id="@+id/lblTotalPais"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lab4Tela2" />
+
+
+            <br.com.cobrasin.TrataMarca
+                android:id="@+id/EdMarca"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"></br.com.cobrasin.TrataMarca>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Condutor foi abordado" />
+
+                <TextView
+                    android:id="@+id/lbl2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="Via entregue ao condutor"
+                    android:layout_marginRight="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:orientation="horizontal">
+
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rdoCondutorAbordadoNao"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:enabled="false"
+                            android:text="Não" />
+
+                        <RadioButton
+                            android:id="@+id/rdoCondutorAbordadoSim"
+                            android:layout_width="match_parent"
+                            android:enabled="false"
+                            android:layout_height="match_parent"
+                            android:text="Sim" />
+                    </RadioGroup>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rdoViaEntregueNao"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:enabled="false"
+                            android:text="Não" />
+
+                        <RadioButton
+                            android:id="@+id/rdoViaEntregueSim"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:enabled="false"
+                            android:layout_marginRight="15dp"
+                            android:text="Sim" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnUfVeiculo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="UF do Veículo" />
+
+            <Button
+                android:id="@+id/btEspecie"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Especie"></Button>
+
+            <Button
+                android:id="@+id/btTipo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Tipo"></Button>
+
+            <Button
+                android:id="@+id/btLogradouro"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Logradouro"></Button>
+
+            <Button
+                android:id="@+id/btEnquadramento"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Enquadramento"></Button>
+
+            <Button
+                android:id="@+id/btDadosInfrator"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Dados do Infrator"></Button>
+
+            <Button
+                android:id="@+id/btObservacoes"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Observações" />
+
+            <Button
+                android:id="@+id/btMedidaAdm"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Medidas Administrativas" />
+
+
+            <Button
+                android:id="@+id/btInfrEquip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Infração - Equipamento" />
+
+            <Button
+                android:id="@+id/btAssinatura"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="Assinatura"
+                android:text="Assinatura"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/btFotografa"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Fotografa" />
+
+
+            <Button
+                android:id="@+id/btVisualizaAit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Visualiza" />
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/btCancelaAitP"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancela AIT"
+            android:textStyle="normal" />
+
+        <CheckBox
+            android:id="@+id/chkDuplicarAIT"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Gerar outra infração para este veículo" />
+
+        <Button
+            android:id="@+id/btFinaliza"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Finaliza"
+            android:textStyle="normal"></Button>
+
+        <ImageView
+            android:id="@+id/Bitmap_Main_Photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY" />
+
+    </LinearLayout>
+</ScrollView>

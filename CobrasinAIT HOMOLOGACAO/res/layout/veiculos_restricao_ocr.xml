@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <org.opencv.android.JavaCameraView
+        android:id="@+id/fd_activity_surface_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <LinearLayout
+        android:id="@+id/pnlCarro"
+        android:layout_width="400dp"
+        android:layout_height="240dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/background_linear"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/lblPlacaDetectou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PLACA DETECTADA!"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@android:color/holo_blue_dark" />
+
+            <Space
+                android:layout_width="224px"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:id="@+id/btnFecharOCR"
+                android:layout_width="36px"
+                android:layout_height="36px"
+                android:layout_gravity="right"
+                android:background="@drawable/closeboxocr" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dip"
+            android:background="#B1B1B1" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="6dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imgPlaca"
+                android:layout_width="210dp"
+                android:layout_height="50dp"
+                android:src="@drawable/icon" />
+
+            <Space
+                android:layout_width="8px"
+                android:layout_height="2dp" />
+
+            <TextView
+                android:id="@+id/lblPlacaOCR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Placa:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dip"
+            android:background="#B1B1B1" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="4dp" />
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/pnlDadosVeiculoOCR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <Space
+                                android:layout_width="4px"
+                                android:layout_height="2dp" />
+
+                            <TextView
+                                android:id="@+id/lblModeloOCR"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Modelo: "
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="#3F3F3F" />
+
+                            <Space
+                                android:layout_width="4px"
+                                android:layout_height="2dp" />
+
+                            <TextView
+                                android:id="@+id/lblCorOCR"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="| Cor: "
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="#3F3F3F" />
+
+                            <Space
+                                android:layout_width="4px"
+                                android:layout_height="2dp" />
+
+                            <TextView
+                                android:id="@+id/lblMarcaOCR"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="| Marca: "
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="#3F3F3F" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <Space
+                            android:layout_width="4px"
+                            android:layout_height="2dp" />
+
+                        <TextView
+                            android:id="@+id/lblAnoLicenciamentoOCR"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ano Licenciamento: "
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="#3F3F3F" />
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dip"
+                        android:background="#B1B1B1" />
+
+                   
+                </LinearLayout>
+ <Button
+                        android:id="@+id/btnNovoAitOCR"
+                        android:layout_width="match_parent"
+                        android:layout_height="33dp"
+                        android:background="@android:color/holo_blue_dark"
+                        android:text="Novo AIT" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp" />
+
+                <Button
+                    android:id="@+id/btnPesquisarONOCR"
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:background="@android:color/holo_blue_dark"
+                    android:text="Pesquisar dados do veículo online" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20px" />
+
+    <ImageView
+        android:id="@+id/Bitmap_Main_Photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lblPlaca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Placa:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF" />
+
+    <ImageView
+        android:id="@+id/imgRetangulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgRetanguloEfeito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/icon"
+        android:visibility="invisible" />
+
+</RelativeLayout>

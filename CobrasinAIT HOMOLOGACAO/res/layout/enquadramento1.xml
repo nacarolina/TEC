@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <Button
+        android:id="@+id/btSelecaoEnquad"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lab4Tela4" />
+     
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1" >
+
+        <ListView
+            android:id="@+id/listaEnquadSelecionados1"
+            android:layout_width="fill_parent"
+            android:layout_height="207dp" >
+
+        </ListView>
+
+        <Button
+            android:id="@+id/btLimpaEnquadramento1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lab3Tela4"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btRetornaEnquadramento1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lab2Tela4"
+            android:textStyle="bold" >
+</Button>
+
+    </TableLayout>
+</LinearLayout>

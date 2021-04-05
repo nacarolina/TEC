@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lab1Tela1"
+        android:gravity="center" 
+        android:id="@+id/nomepda" />
+
+    <TextView
+        android:id="@+id/txvAgente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agente" />
+    
+    <br.com.cobrasin.TrataAgente
+        android:id="@+id/edAgente"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal" >
+
+	</br.com.cobrasin.TrataAgente>
+	
+	<TextView
+	    android:id="@+id/lblSenhaAgente"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/lab2Tela1" >
+
+	</TextView>
+	
+	<EditText
+	    android:id="@+id/edSenha"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:ems="10"
+	    android:inputType="numberPassword"
+	    android:maxLength="6" >
+
+	</EditText>
+
+	<TextView
+	    android:id="@+id/lblIMEI"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="EMEI" />
+
+	<EditText
+	    android:id="@+id/edIMEI"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:ems="10" >
+
+	    <requestFocus />
+	</EditText>
+
+	<Button
+	    android:id="@+id/btEntrar"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="Entrar" />
+
+	<Button
+	    android:id="@+id/btRxWebTrans"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/lab4Tela1" />
+
+	<Button
+	    android:id="@+id/btDelDb"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="Excluir banco de dados" />
+	
+<Button
+    android:id="@+id/btEncerraLogon"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/lab3Tela1" >
+</Button>
+
+</LinearLayout>

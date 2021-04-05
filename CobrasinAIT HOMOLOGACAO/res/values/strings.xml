@@ -1,0 +1,136 @@
+
+<resources>
+    <string name="lab1Tela1">Agente</string>
+    <string name="lab2Tela1">Senha</string>
+    <string name="lab3Tela1">Encerra Aplicação</string>
+    <string name="lab4Tela1">Autenticar Talonário no WebTrans</string>
+   
+    <string name="lab1Tela2">Placa</string>
+    <string name="lab4Tela2">Marca</string>
+    <string name="lab2Tela2">Espécie</string>
+    <string name="lab3Tela2">Tipo</string>
+    <string name="lab5Tela2">Data</string>
+    <string name="lab6Tela2">Hora</string>
+   
+    <string name="lab1Tela3">Logradouro</string>
+    <string name="lab2Tela3">Confirma</string>
+    <string name="lab3Tela3">Selecionado:</string>
+    <string name="lab4Tela3">Número</string>
+    <string name="lab5Tela3">Grava</string>
+    <string name="lab6Tela3">Oposto</string>
+    <string name="lab7Tela3">Defronte</string>
+    <string name="lab8Tela3">Ao Lado de</string>
+    <string name="lab9Tela3">Pesquisa</string>
+    <string name="lab10Tela3">Próxima Tela</string>
+    
+    <string name="lab1Tela4">Código do Enquadramento ou Descrição</string>
+    <string name="lab2Tela4">Retorna</string>
+    <string name="lab3Tela4">Limpa Seleção</string>
+    <string name="lab4Tela4">Seleção / Toque no enquadramento para excluí-lo</string>
+    <string name="Lab5Tela4">Próxima Tela</string>
+    
+    <string name="Lab1Tela5">Servidor</string>
+    <string name="Lab2Tela5">Usuario</string>
+    <string name="Lab3Tela5">Senha</string>
+    <string name="Lab4Tela5">Download da Base de Dados</string>
+    <string name="Lab5Tela5">PDA</string>
+    
+    <string name="Lab1Tela6">Observações</string>
+    <string name="Lab2Tela6">Arquivo de Observações / Toque para selecionar ou excluir</string>
+    
+    <string name="Lab1Tela7">Nome</string>
+    <string name="Lab2Tela7">PGU</string>
+    <string name="Lab3Tela7">UF</string>
+    <string name="Lab5Tela7">CPF</string>
+    
+    <string name="Lab1Tela8">Novo AIT</string>
+    <string name="Lab2Tela8">Tela Inicial</string>
+    <string name="Lab3Tela8">Transmite AITs</string>
+    <string name="Lab4Tela8">Parâmetros</string>
+    <string name="Lab5Tela8">Imprimir todos AITs</string>
+    
+    <string name="Lab1Tela9">Imprime</string>
+    <string name="Lab2Tela9">Retorna</string>
+    <string name="Lab3Tela9">Cancela</string>
+    <string name="Lab4Tela9">Fotos</string>
+    
+    <string name="Lab1Tela10">Sim</string>
+    <string name="Lab2Tela10">Não</string>
+    <string name="Lab3Tela10">Endereço Impressora</string>
+    <string name="Lab4Tela10">Senha Reset PDA</string>
+    <string name="Lab5Tela10">R E S E T</string>
+    <string name="Lab5Tela11">Imprime Observações</string>
+    <string name="Lab6Tela10">Recebe Tabelas WebTrans</string>
+    <string name="Lab7Tela10">Patrimonio Impressora</string>
+    
+    <string name="Lab1Tela11">Motivo Cancelamento</string>
+    
+    <string name="Lab1Tela12">CPF</string>
+    <string name="Lab2Tela12">Nome</string>
+    <string name="Lab3Tela12">CNPJ</string>
+    
+    <string name="Lab1Tela13">Equipamento</string>
+    <string name="Lab2Tela13">Medição Registrada</string>
+    <string name="Lab3Tela13">Medição Considerada</string>
+    <string name="Lab4Tela13">Limite Regulamentado</string>
+    <string name="Lab5Tela13">Observações</string>
+    
+    <string name="app_name">TEC</string>
+    
+    <string name="lblNumeroInicial">Número de ait inicial:</string>
+    
+    <string name="lblNumeroFinal">Número de ait final:</string>
+    
+    <string name="lblImprimir">Imprimir</string>
+    
+    <string name="lblImpressaoAit">Impressão de AIT</string>
+    
+    <string name="lblExcluir">Toque no enquadramento para exclui-lo</string>
+    
+    <string name="lblUsuarioFTP">Usuário de FTP</string>
+    
+    <string name="lblCodMunici">Código do Município</string>
+    
+    <string name="lblStatusAit">Status do AIT</string>
+    
+    <string name="lblAitsCancelados">Ait(s) Cancelado(s): </string>
+    
+    <string name="lblTotalAit">"Total de Ait(s): "</string>
+    
+    <string name="lblAitValido">"Ait(s) Válido: "</string>
+    
+    <string name="lblOrigemInfrator">Selecione o tipo de habilitação:</string>
+    
+    <string name="lblInfratorNacional">CNH - Carteira Nacional de Habilitação</string>
+    
+    <string name="lblInfratorEs">PID - Permisão Internacional para Dirigir</string>
+    
+    <string name="lblModeOpe">Modo de Conexão:</string>
+    
+    <string name="lblEditDtMod">Editar data modificada:</string>
+    
+    <string name="lblEditHrMod">Editar hora modificada:</string>
+    
+    <string name="lblSalvar">Salvar Alterações</string>
+    
+    <string name="lblEstatistica">Estatísticas</string>
+    
+    <string name="lblAitTransferido">"Ait(s) Transferido(s): "</string>
+    
+    <string name="lblModoGps">Modo GPS:</string>
+    
+    <string name="lblSincronizarGps">Sincronizar GPS</string>
+    
+    <string name="lblOcr">OCR</string>
+    
+    <string name="lblModoOCR">Modo OCR:</string>
+    
+    <string name="lblGeraAitPdf">Gera ait em PDF:</string>
+    
+    <string name="lblImagem1">Imagem 1</string>
+    
+    <string name="lblImagem2">Imagem 2</string>
+    
+    <string name="lblImagem3">Imagem 3</string>
+    
+</resources>

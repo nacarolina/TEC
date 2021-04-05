@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="1" >
+    <RadioGroup
+        android:id="@+id/radioG11"
+        android:layout_width="fill_parent"
+        android:layout_height="136dp" >
+
+        <RadioButton
+            android:id="@+id/radio00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/lab6Tela3" />
+
+        <RadioButton
+            android:id="@+id/radio11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lab7Tela3" />
+
+        <RadioButton
+            android:id="@+id/radio22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lab8Tela3" />
+
+       
+
+    </RadioGroup>
+
+        <TextView
+            android:id="@+id/txtLogSelec1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lab3Tela3" />
+
+        <TextView
+            android:id="@+id/txtNumero1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lab4Tela3" />
+
+        <EditText
+            android:id="@+id/edNumeroLog1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+        </EditText>
+
+        <Button
+            android:id="@+id/btGravaLogNum1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lab2Tela3" />
+
+        <Button
+            android:id="@+id/btnEditLogradouro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selecionar Logradouro" />
+
+        <Button
+            android:id="@+id/btnAddCruzamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Adicionar Cruzamento" />
+
+</LinearLayout>
+

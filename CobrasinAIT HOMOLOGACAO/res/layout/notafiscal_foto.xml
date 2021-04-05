@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <Space
+    android:layout_width="match_parent"
+    android:layout_height="4px" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Foto da Nota Fiscal"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<Space
+    android:layout_width="match_parent"
+    android:layout_height="4px" />
+
+    <View android:background="#FFFFFF" android:layout_width="fill_parent" android:layout_height="1px"/>
+    <Space
+    android:layout_width="match_parent"
+    android:layout_height="4px" />
+
+    <TextView
+        android:id="@+id/lblNumeroNF_Foto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nº da Nota:" />
+<Space
+    android:layout_width="match_parent"
+    android:layout_height="4px" />
+    <ImageView
+            android:id="@+id/imgNF"
+            android:layout_width="match_parent"
+            android:layout_height="320px"
+            android:src="@drawable/carregando" />
+
+    <Button
+        android:id="@+id/btnVoltarImgNF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Voltar" />
+
+</LinearLayout>

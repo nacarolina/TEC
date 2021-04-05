@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+                    <Space
+    android:layout_width="match_parent"
+    android:layout_height="4px" />
+                
+       <Space
+    android:layout_width="match_parent"
+    android:layout_height="4px" />
+    
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Silhueta:" 
+           android:paddingLeft="8px"
+           android:textStyle="bold"
+           android:textColor="#FFFFFF"/>
+
+       <ImageView
+           android:id="@+id/imgSilheta_lstCaracterizacao"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+    
+    <Space
+    android:layout_width="match_parent"
+    android:layout_height="4px" />
+    
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:paddingLeft="8px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF" 
+                android:textStyle="bold"
+                android:text="Grupo/Nº Eixos: " />
+
+            <TextView
+                android:id="@+id/lblGrupo_N_Eixos_lstCaracterizacao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 
+                android:text="Dados"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+    
+    <Space
+    android:layout_width="match_parent"
+    android:layout_height="4px" />
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="PBT ou PBTC/(5%): "
+		    android:textColor="#FFFFFF"
+		    android:textStyle="bold" />
+
+		<TextView
+		    android:id="@+id/lblPBT_PBTC_lstCaracterizacao"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="Dados"
+		    android:textColor="#FFFFFF" />
+
+	</LinearLayout>
+    
+    <Space
+    android:layout_width="match_parent"
+    android:layout_height="4px" />
+
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content" >
+
+			<TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="Caracterização: "
+			    android:textColor="#FFFFFF"
+			    android:textStyle="bold" />
+
+			<TextView
+			    android:id="@+id/lblCaracterizacaoTitulo_lstCaracterizacao"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="Dados"
+			    android:textColor="#FFFFFF" />
+
+		</LinearLayout>
+    <TextView
+			    android:id="@+id/lblCaracterizacaoDesc_lstCaracterizacao"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="Dados"
+			    android:textColor="#FFFFFF" />
+    <Space
+    android:layout_width="match_parent"
+    android:layout_height="4px" />
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="Classe: "
+		    android:textColor="#FFFFFF"
+		    android:textStyle="bold" />
+
+		<TextView
+		    android:id="@+id/lblClasse_lstCaracterizacao"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="Dados"
+		    android:textColor="#FFFFFF" />
+
+	</LinearLayout>
+    
+    <Space
+    android:layout_width="match_parent"
+    android:layout_height="4px" />
+
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content" >
+
+			<TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="Código: "
+			    android:textColor="#FFFFFF"
+			    android:textStyle="bold" />
+
+			<TextView
+			    android:id="@+id/lblCodigo_lstCaracterizacao"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="Dados"
+			    android:textColor="#FFFFFF" />
+
+		</LinearLayout>
+    
+    <Space
+    android:layout_width="match_parent"
+    android:layout_height="4px" />
+    </LinearLayout>
+    
+    
+        <View android:background="#FFFFFF" android:layout_width="fill_parent" android:layout_height="1px"/>
+
+</LinearLayout>

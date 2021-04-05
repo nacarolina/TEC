@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+
+    <TextView
+        android:id="@+id/lblSelecione"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Lab1Tela6" >
+</TextView>
+
+    <EditText
+        android:id="@+id/edObservacoes"
+        android:layout_width="fill_parent"
+        android:layout_height="71dp"
+        android:ems="10"
+        android:inputType="text|textMultiLine"
+        android:maxLength="200" >
+
+        <requestFocus />
+    </EditText>
+
+        <Button
+            android:id="@+id/btGravaObs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lab2Tela3" />
+
+        <TextView
+            android:id="@+id/txvnrimagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Lab2Tela6" />
+
+        <Button
+            android:id="@+id/btnSelObs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selecionar" />
+
+        <Button
+            android:id="@+id/btnApagarObs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apagar" />
+ <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dip"
+        android:background="#979797" />
+        <ListView
+            android:id="@+id/listaObservacoes"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+</LinearLayout>
