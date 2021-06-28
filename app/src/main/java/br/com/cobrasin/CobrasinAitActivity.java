@@ -52,6 +52,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
+import android.os.StrictMode;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.telephony.SubscriptionInfo;
@@ -190,6 +191,31 @@ public class CobrasinAitActivity extends Activity {
 
             String retornoweb = EntityUtils.toString(response.getEntity());
 
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+
+                if (statusCode == 403 || statusCode == 302 || statusCode == 301) {
+                    url = response.getHeaders("Location")[0].getElements()[0].getName() + "=" + response.getHeaders("Location")[0].getElements()[0].getValue();
+
+                    post = new HttpPost(url);
+
+                    try {
+                        post.setEntity(new UrlEncodedFormEntity(nvps, HTTP.UTF_8));
+                    } catch (UnsupportedEncodingException e1) {
+
+                        ret = "service error";
+                        // TODO Auto-generated catch block
+                        e1.printStackTrace();
+                    }
+
+                    // HttpResponse response = httpclient.execute(httpget);
+                    response = httpclient.execute(post);
+
+                    statusLine = response.getStatusLine();
+                    statusCode = statusLine.getStatusCode();
+
+                    retornoweb = EntityUtils.toString(response.getEntity());
+                }
+            }
             if (statusCode == 200) {
 
                 try {
@@ -201,8 +227,8 @@ public class CobrasinAitActivity extends Activity {
                         // TODO Auto-generated catch block
                         e.printStackTrace();
                     }
-					
-					/*if (tipotransacao.equals("clientes")) 
+
+					/*if (tipotransacao.equals("clientes"))
 					{
 						retornoweb = "[" + retornoweb + "]";
 					}*/
@@ -220,9 +246,9 @@ public class CobrasinAitActivity extends Activity {
                 // 18.05.2012
                 // grava resposta do WEBTRANS
                 //******************************
-				/*String mensz = "Sinc.Tabelas Retorno: " + 
-				String.format("%d",statusCode) + 
-				" - "+ 
+				/*String mensz = "Sinc.Tabelas Retorno: " +
+				String.format("%d",statusCode) +
+				" - "+
 				retornoweb;*/
 
                 //Utilitarios.gravaLog(mensz, context);
@@ -499,6 +525,8 @@ public class CobrasinAitActivity extends Activity {
             e1.printStackTrace();
         }
 
+        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        StrictMode.setThreadPolicy(policy);
 
         TextView txtIMEI = (TextView) findViewById(R.id.edIMEI);
         TextView lblIMEI = (TextView) findViewById(R.id.lblIMEI);

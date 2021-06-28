@@ -360,14 +360,13 @@ public class Sincronismo {
                 c = null;
                 String sqlpesq = "Select DtHrSincroniaObsObrigatorio from enquadramento  where  EnquadramentoObsObrigatorio ='1'";
                 c = s.rawQuery(sqlpesq, null);
-
-                c.moveToFirst();
-                DtHrSincroniaObsObrigatorio = c.getString(c.getColumnIndex("DtHrSincroniaObsObrigatorio"));
-
+                if (c.moveToFirst()) {
+                    DtHrSincroniaObsObrigatorio = c.getString(c.getColumnIndex("DtHrSincroniaObsObrigatorio"));
+                }
                 c.close();
 
             } catch (SQLiteException e) {
-                Log.e("Erro=", e.getMessage());
+                //Log.e("Erro=", e.getMessage());
             }
 
             UrlsWebTransDAO urlswebtrans = new UrlsWebTransDAO(context);
@@ -3760,11 +3759,11 @@ public class Sincronismo {
             }
 
             urlBase = urlBase.substring(0, urlBase.length() - 1);
-            urlBase = urlBase.replace("+", " ").replaceAll("%", "").replaceAll("#","").replaceAll("@","")
+            urlBase = urlBase.replace("+", " ").replaceAll("%", "").replaceAll("#", "").replaceAll("@", "")
                     .replaceAll("Á", "").replaceAll("Ã", "").replaceAll("Â", "")
                     .replaceAll("É", "").replaceAll("Ê", "").replaceAll("Í", "")
                     .replaceAll("Ó", "").replaceAll("Ô", "").replaceAll("Õ", "")
-                    .replaceAll("Ú", "").replaceAll("Ç", "").replaceAll("@","");
+                    .replaceAll("Ú", "").replaceAll("Ç", "").replaceAll("@", "");
             nvps.add(new BasicNameValuePair("checkSum", MD5Util
                     .criptografar(urlBase)));
 
